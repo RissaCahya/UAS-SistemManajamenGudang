@@ -79,7 +79,7 @@
                 <input type="password" name="password" class="form-control" placeholder="Password" required>
             </div>
             <button type="submit" name="login" class="btn btn-login w-100 shadow-sm">
-                MASUK SEKARANG
+                LOGIN
             </button>
         </form>
 
