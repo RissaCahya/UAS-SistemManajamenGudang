@@ -111,7 +111,7 @@ elseif($menu == 'sistem'){
 
   <p>
     Sistem ini menerapkan mekanisme autentikasi dan hak akses berbasis peran
-    (role-based access control), di mana Admin Gudang memiliki wewenang penuh
+    (role-based access control), dimana Admin Gudang memiliki wewenang penuh
     dalam mengelola data dan laporan, Staf Gudang bertanggung jawab terhadap
     aktivitas operasional pencatatan barang, serta Owner atau Manajer memiliki
     akses untuk memantau laporan dan kondisi gudang secara keseluruhan tanpa
