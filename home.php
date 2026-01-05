@@ -7,8 +7,12 @@ $menu = $_GET['menu'] ?? 'home';
 <!DOCTYPE html>
 <html>
 <head>
-<title>CMS Gudang</title>
-<link rel="stylesheet" href="style.css">
+  <title>CMS Gudang</title>
+
+  <!-- WAJIB UNTUK RESPONSIVE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -77,17 +81,49 @@ elseif($menu == 'sistem'){
 ?>
 <section>
   <h2>Profil Sistem Manajemen Gudang</h2>
+
   <p>
-    Sistem Manajemen Gudang adalah aplikasi berbasis web
-    yang digunakan untuk mengelola proses pergudangan
-    seperti barang masuk, barang keluar, stok opname,
-    dan pembuatan laporan.
+    Sistem Manajemen Gudang Roti merupakan sebuah aplikasi berbasis web yang
+    dirancang untuk mendukung proses pengelolaan persediaan gudang pada
+    perusahaan manufaktur roti secara terintegrasi, sistematis, dan terdokumentasi
+    dengan baik, mulai dari pencatatan penerimaan bahan baku, pengeluaran bahan
+    untuk proses produksi, penerimaan barang jadi hasil produksi, hingga penyajian
+    laporan persediaan yang akurat dan dapat digunakan sebagai dasar pengambilan
+    keputusan manajerial.
   </p>
 
   <p>
-    Sistem ini membantu admin, staf, dan owner
-    dalam memantau stok barang secara efektif
-    dan terstruktur.
+    Sistem ini dikembangkan sebagai solusi atas permasalahan pencatatan manual
+    yang berpotensi menimbulkan kesalahan perhitungan stok, keterlambatan
+    informasi, serta kurangnya transparansi data antara pihak gudang, produksi,
+    dan manajemen, sehingga seluruh aktivitas pergudangan dapat dipantau secara
+    real-time dan terkontrol dengan lebih baik.
+  </p>
+
+  <p>
+    Secara fungsional, Sistem Manajemen Gudang Roti memungkinkan pengguna
+    untuk mencatat transaksi barang masuk dan barang keluar yang secara otomatis
+    memperbarui jumlah stok di dalam sistem, melakukan proses stok opname untuk
+    mencocokkan data sistem dengan kondisi fisik barang di gudang, serta
+    menghasilkan laporan stok dan transaksi dalam format digital yang mudah
+    dipahami dan diarsipkan.
+  </p>
+
+  <p>
+    Sistem ini menerapkan mekanisme autentikasi dan hak akses berbasis peran
+    (role-based access control), di mana Admin Gudang memiliki wewenang penuh
+    dalam mengelola data dan laporan, Staf Gudang bertanggung jawab terhadap
+    aktivitas operasional pencatatan barang, serta Owner atau Manajer memiliki
+    akses untuk memantau laporan dan kondisi gudang secara keseluruhan tanpa
+    dapat mengubah data.
+  </p>
+
+  <p>
+    Dengan diterapkannya Sistem Manajemen Gudang Roti ini, perusahaan
+    diharapkan mampu meningkatkan efisiensi operasional gudang, meminimalkan
+    risiko kesalahan pencatatan, mempercepat proses pelaporan, serta menciptakan
+    transparansi dan pengendalian stok yang lebih baik guna mendukung kelancaran
+    proses produksi dan pengambilan keputusan bisnis.
   </p>
 </section>
 <?php
@@ -97,17 +133,21 @@ elseif($menu == 'profil'){
 ?>
 <section>
   <h2>Profil Sistem Manajemen Gudang</h2>
+
   <p>
-    Sistem Manajemen Gudang adalah aplikasi berbasis web
-    yang digunakan untuk mengelola proses pergudangan
-    seperti barang masuk, barang keluar, stok opname,
-    dan pembuatan laporan.
+    Sistem Manajemen Gudang Roti merupakan aplikasi berbasis web yang
+    digunakan untuk mengelola seluruh aktivitas pergudangan pada perusahaan
+    manufaktur roti, mulai dari pengelolaan data barang, pencatatan transaksi
+    barang masuk dan barang keluar, proses stok opname, hingga penyusunan
+    laporan persediaan secara terstruktur dan akurat.
   </p>
 
   <p>
-    Sistem ini membantu admin, staf, dan owner
-    dalam memantau stok barang secara efektif
-    dan terstruktur.
+    Sistem ini dirancang untuk membantu Admin Gudang, Staf Gudang, dan
+    Owner atau Manajer dalam memantau ketersediaan stok bahan baku maupun
+    barang jadi secara efektif, mengurangi ketergantungan pada pencatatan
+    manual, serta meningkatkan akurasi data sebagai dasar pengambilan
+    keputusan operasional dan manajerial.
   </p>
 </section>
 <?php

@@ -220,20 +220,6 @@ footer{
   opacity:0.8;
 }
 
-/* MOBILE */
-@media(max-width:576px){
-  footer{
-    grid-template-columns:1fr;
-    text-align:center;
-    gap:15px;
-  }
-
-  .footer-right{
-    text-align:center;
-  }
-}
-
-
 /* ===== TABLET ===== */
 /* ===== TABLET ===== */
 @media(max-width:992px){
@@ -266,11 +252,54 @@ footer{
     margin-top:30px;
   }
 }
+/* ===== MOBILE / SMARTPHONE ===== */
+@media (max-width: 576px){
 
+  /* HEADER → LOGO & TEKS KE BAWAH */
+  header{
+    flex-direction: column;
+    text-align: center;
+  }
 
-/* ===== MOBILE ===== */
-@media(max-width:576px){
-  .main{flex-direction:column}
-  nav,article,aside{width:100%}
+  header img{
+    width: 70px;
+  }
+
+  .header-text{
+    align-items: center;
+  }
+
+  /* MAIN JADI 1 KOLOM */
+  .main{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  /* NAV FULL WIDTH */
+  nav{
+    width: 100%;
+  }
+
+  /* ARTICLE FULL WIDTH */
+  article{
+    width: 100%;
+  }
+
+  /* ASIDE FULL WIDTH */
+  aside{
+    width: 100%;
+  }
+
+  /* FOOTER 1 KOLOM */
+  footer{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-right{
+    text-align: center;
+    align-items: center;
+  }
 }
-
